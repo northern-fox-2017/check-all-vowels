@@ -17,4 +17,4 @@ return kondisi;
 
 console.log(checkAllVowel('iiioioIoioiioioAiwioi'))//false
 console.log(checkAllVowel('diuiaoow')) //false
-console.log(checkAllVowel('iUuAao'))//true
+console.log(checkAllVowel('iUAaO'))//true
