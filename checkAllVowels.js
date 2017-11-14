@@ -1,13 +1,12 @@
 function checkAllVowel(string) {
-    let vocal=['a','i','u','e','o','A','I','U','E','O'],checkSum=0;
-    for(let i=0;i<string.length;i++){
-        for(let j=0;j<vocal.length;j++){
-            if(string[i]===vocal[j]){
-                checkSum++
-            }
+    let vocal=['A','I','U','E','O'];
+    
+    for(var str of string){
+        if(vocal.indexOf(str.toUpperCase())===-1){
+            return false
         }
     }
-    return string.length===checkSum;
+    return true;
 }
 
 console.log(checkAllVowel('aAuE')); //true
