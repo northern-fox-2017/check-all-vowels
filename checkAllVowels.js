@@ -1,6 +1,6 @@
 
 function allVowels(str){
-  var vowels = 'aiueo'
+  var vowels = 'aiueoAIUEO'
 
   for(var char of str){
     if(vowels.indexOf(char) === -1){
@@ -11,4 +11,5 @@ function allVowels(str){
 }
 
 console.log(allVowels('aaaaaiiiiu'))
+console.log(allVowels('aaAAaaaiiiiuAAEE'))
 console.log(allVowels('vbsdsadsaqqq'))
