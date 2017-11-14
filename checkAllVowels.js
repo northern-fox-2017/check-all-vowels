@@ -3,14 +3,14 @@ function checkVowel(kata) {
   let hasil = ''
 
   for (let i = 0; i < kata.length; i++) {
-    for (let j = 0; j < vowel.length; j++) {
-      if(kata[i] === vowel[j]){
-        hasil += kata[i]
-      }
+    hasil = vowel.indexOf(kata[i])
+    if(hasil === -1){
+      return false
     }
   }
-  return hasil.length === kata.length
+  return true
 }
 console.log(checkVowel('aiueo'));
 console.log(checkVowel('sudoku'));
 console.log(checkVowel('jsracer'));
+console.log(checkVowel('aaaaiiiooouuuiiuuu'));
