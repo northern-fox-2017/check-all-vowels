@@ -1,8 +1,8 @@
 function checkVowels(str) {
-    var vowel = ['a', 'b', 'c', 'd', 'e'];
+    var vowel = ['A', 'E', 'I', 'O', 'U'];
     var counter = 0;
     for (var i = 0; i < str.length; i++) {
-        if (vowel.indexOf(str[i]) !== -1)
+        if (vowel.indexOf(str[i].toUpperCase()) !== -1)
             counter++;
     }
 
