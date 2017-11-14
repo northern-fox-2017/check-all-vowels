@@ -1,7 +1,7 @@
 function checkVowels(str){
   const vowel = 'aiueo'
   for(let i = 0; i < str.length; i++){
-    if(vowel.indexOf(str[i]) == -1){
+    if(vowel.indexOf(str[i].toLowerCase()) == -1){
       return false
     }
   }
